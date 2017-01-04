@@ -94,7 +94,7 @@ span.pill {
         font-weight:normal;
     }
     a[href^=http]:not(.no-link):after{
-        content:" : " attr(href);
+        content: " : " attr(href);
     }
     a[href^="tel"]:after, a[href^="mailto"]:after {
         content: " : " attr(title);

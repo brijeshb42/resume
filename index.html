@@ -18,21 +18,21 @@
       <div class="title">
         <h1>Brijesh Bittu</h1>
         <h2>Software Engineer</h3>
-          <h3><a href="http://scroll.in">Scroll.in</a></h4>
+          <h3><a href="http://scroll.in" target="_blank">Scroll Media Inc</a></h4>
           </div>
           <div class="links">
             <h5>
-              <a href="tel:+918087650710" title="+918087650710">
+              <a href="tel:+918087650710" title="+918087650710" target="_blank">
                 <i class="phone icon"></i><span class="pill">Phone</span>
               </a>
             </h5>
-            <h5><a href="mailto:brijesh@bitwiser.in" title="brijesh@bitwiser.in">
+            <h5><a href="mailto:brijesh@bitwiser.in" title="brijesh@bitwiser.in" target="_blank">
               <i class="mail icon"></i><span class="pill">Email</span>
             </a></h5>
-            <h5><a href="http://bitwiser.in">
+            <h5><a href="http://bitwiser.in" title="http://bitwiser.in" target="_blank">
               <i class="linkify icon"></i><span class="pill">Website</span>
             </a></h5>
-            <h5><a href="https://github.com/brijeshb42">
+            <h5><a href="https://github.com/brijeshb42" target="_blank">
               <i class="github icon"></i><span class="pill">Github</span>
             </a></h5>
           </div>
@@ -40,22 +40,25 @@
       </div>
       <div style="visibility:hidden" class="ui container">
       </div>
-      <!-- <div class="ui container know-more">
+    <div class="ui container know-more">
     <div class="ui grid">
-        <div class="three wide column">
+        <!--<div class="three wide column">
             Know me more @
+        </div>-->
+        <div class="four wide column">
+            <a href="https://github.com/brijeshb42" class="no-link" target="_blank"><i class="github icon"></i>/brijeshb42</a>
         </div>
         <div class="four wide column">
-            <a href="https://www.facebook.com/brijeshb42" class="no-link"><i class="facebook icon"></i>/brijeshb42</a>
+            <a href="https://twitter.com/brijeshb42" class="no-link" target="_blank"><i class="twitter icon"></i>/brijeshb42</a>
         </div>
         <div class="four wide column">
-            <a href="https://twitter.com/brijeshb42" class="no-link"><i class="twitter icon"></i>/brijeshb42</a>
+            <a href="https://in.linkedin.com/in/brijeshb42" class="no-link" target="_blank"><i class="linkedin icon"></i>/in/brijeshb42</a>
         </div>
-        <div class="five wide column">
-            <a href="https://in.linkedin.com/in/brijeshbittu"><i class="linkedin icon"></i></a>
+        <div class="four wide column">
+            <a href="https://www.facebook.com/brijeshb42" class="no-link" target="_blank"><i class="facebook icon"></i>/brijeshb42</a>
         </div>
       </div>
-    </div> -->
+    </div>
     
     <div class="ui container projects">
       <h2 style="border-bottom: 1px solid #eee;border-top: 1px solid #eee;margin: 3px 0;"><i class="server icon"></i> Projects</h2>
@@ -66,8 +69,8 @@
             <li>
               <strong>Scribe (Current CMS used by Scroll)</strong>
               <ul>
-                <li>Built the full frontend using <strong>React</strong>, <strong>React-Router</strong>, and some of the backend.</li>
-                <li>Used my React Component <strong>(<a href="http://github.com/brijeshb42/kattappa">Kattappa</a>)</strong> for management of article content.</li>
+                <li>Built the full frontend using <strong>React</strong>, <strong>React-Router</strong>, and also built some of the backend (Using <strong>python</strong> and <strong>flask</strong>.</li>
+                <li>Used my React Component <strong>(<a href="http://github.com/brijeshb42/kattappa">Kattappa</a>)</strong> for providing rich text editing of article contents.</li>
               </ul>
             </li>
             <li><strong>Current website of Scroll.in</strong>
@@ -104,10 +107,10 @@
             <li>
               <a href="http://bitwiser.in/medium-style-confirm/">Medium style confirm</a> - A replacement of javascript <strong>alert</strong>, <strong>confirm</strong> and <strong>prompt</strong>.
             </li>
-            <li><a href="http://bitwiser.in/kattappa/">Kattappa</a> - A block-based rich text editor (being used in the internal CMS of Scroll).</li>
+            <li><a href="http://bitwiser.in/kattappa/">Kattappa</a> - A block-based rich text editor (being used in the internal CMS of Scroll). <a href="http://github.com/brijeshb42/kattappa">[Github]</a></li>
             <li><strong>Jekyll Themes</strong>
               <ul>
-                <li><a href="http://bitwiser.in/bitwiser/">Bitwser</a> - A jekyll theme for static blogs (Currently used by more than 60 blogs).
+                <li><a href="http://bitwiser.in/bitwiser/">Bitwiser</a> - A jekyll theme for static blogs (Currently used by more than 60 blogs).
                 <li><a href="http://bitwiser.in/bitwiser-material/">Bitwiser-Material</a> - Material design jekyll theme</li>
                 <li><a href="http://bitwiser.in">Jekyll-Read</a></li>
               </ul>
@@ -173,7 +176,7 @@
           <div class="company">
             <h4>2015 (January - Present)</h4>
             <h3>Scroll Media Inc</h3>
-            <p>Software Engineer</p>
+            <p>Software Engineer (Full Stack)</p>
           </div>
         </div>
         <!--<div class="six wide column">
@@ -190,7 +193,10 @@
     <button class="fluid positive ui button print-button hide-in-print" onclick="print()">Print</button>
   </div>
   <script>
-    if (window.location.search === '?print') {
+    if (window.location.search.indexOf('noimage') >= 0) {
+      document.querySelector('.image').style.display = 'none';
+    }
+    if (window.location.search.indexOf('?print') === 0) {
       window.addEventListener('load', function() {
         window.print();
       });
