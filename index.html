@@ -7,6 +7,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div class="ui container">
+    <button class="fluid positive ui button print-button hide-in-print" onclick="print()">Print</button>
+  </div>
   <div id="container" class="ui container">
     <div class="intro-container">
       <div class="image">
@@ -182,6 +185,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="ui container">
+    <button class="fluid positive ui button print-button hide-in-print" onclick="print()">Print</button>
   </div>
   <script>
     if (window.location.search === '?print') {
