@@ -1,0 +1,94 @@
+body {
+    font-size: 16px;
+}
+.ui.container {
+    width: 800px;
+}
+.intro-container {
+    background: #eee;
+    padding: 5px 10px;
+}
+.intro-container:after {
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+.intro-container .image, .intro-container .title {
+    float: left;
+    margin-right: 20px;
+}
+.intro-container .links {
+    float: right;
+}
+span.pill {
+    padding: 2px 4px;
+    background-color: #EFFAFF;
+    display: inline-block;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+.title h1 {
+    font-size: 2.5em;
+}
+.title h1, .title h2, .title h3 {
+    margin: 0;
+}
+.links h2, .links h5 {
+    margin: 0;
+}
+.know-more {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+.about h2 {
+    margin: 10px 0;
+}
+.about h3 , .about h4, .about h5 {
+    margin: 4px 0;
+}
+.about p {
+    margin: 2px;
+}
+.about h4 {
+    border-left: 4px solid #08c;
+    padding-left: 10px;
+}
+.about h3 , .about p {
+    margin-left: 12px;
+}
+.about-me p, .about-me h3 {
+    margin: 0;
+}
+.about-me ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+}
+.company {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.company:last-child {
+    border: none;
+}
+.projects h2 {
+    text-align: center;
+}
+.projects ul {
+    padding: 0 0 0 18px;
+    margin: 0;
+}
+@media print{
+    a {
+        font-size:0.8em;
+        font-weight:normal;
+    }
+    a[href^=http]:not(.no-link):after{
+        content:" : " attr(href);
+    }
+    a[href^="tel"]:after, a[href^="mailto"]:after {
+        content: " : " attr(title);
+    }
+}
