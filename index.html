@@ -183,5 +183,12 @@
       </div>
     </div>
   </div>
+  <script>
+    if (window.location.search === '?print') {
+      window.addEventListener('load', function() {
+        window.print();
+      });
+    }
+  </script>
 </body>
 </html>
